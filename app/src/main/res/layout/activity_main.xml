@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/tagline"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15sp"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/btn_rock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:hint="@string/Choose_Rock"
+            />
+
+        <Button
+            android:id="@+id/btn_paper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:hint="@string/Choose_Paper"
+            />
+
+        <Button
+            android:id="@+id/btn_scissors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:hint="@string/Choose_Scissors"
+            android:textColorHint="@color/colorPrimaryDark"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+
+        <ImageView
+            android:id="@+id/iv_input"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:tag="input"
+            />
+
+        <ImageView
+            android:id="@+id/iv_output"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+</LinearLayout>
