@@ -55,13 +55,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void setOutput() {
+    public void setOutput() {
         int imageId = (int) (Math.random() * images.length);
         output.setBackgroundResource(images[imageId]);
         checkresult(imageId);
     }
 
-    private void checkresult(int imageId) {
+    public void checkresult(int imageId) {
         if (userinput == 1 && imageId == 0) {     //User choose Rock,Computer choose Rock
             showresult(2);
         } else if (userinput == 1 && imageId == 1) { //User choose Rock,Computer choose Paper
@@ -83,7 +83,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void showresult(int result) {
+
+    public void showresult(int result) {
         if (result == 0) {
             Toast.makeText(getApplicationContext(), "You Lost!", Toast.LENGTH_SHORT).show();
         } else if (result == 1)
@@ -91,4 +92,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else
             Toast.makeText(getApplicationContext(), "It's a Tie!", Toast.LENGTH_SHORT).show();
     }
+
+
+
 }
